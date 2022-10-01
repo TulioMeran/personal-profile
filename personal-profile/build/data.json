@@ -1,0 +1,70 @@
+{
+    "skills": [
+        {
+            "name": "JavaScript",
+            "rate": 5
+        },
+        {
+            "name": "TypeScript",
+            "rate": 3
+        },
+        {
+            "name": "ReactJs",
+            "rate": 4
+        },
+        {
+            "name": "React Native",
+            "rate": 4
+        },
+        {
+            "name": "AngularJs",
+            "rate": 2
+        },
+        {
+            "name": "Angular",
+            "rate": 3
+        },
+        {
+            "name": "VueJs",
+            "rate": 2
+        },
+        {
+            "name": "NodeJs",
+            "rate": 3
+        },
+        {
+            "name": "ExpressJs",
+            "rate": 3
+        },
+        {
+            "name": "C#",
+            "rate": 5
+        }
+    ],
+    "soft": [
+        {
+            "name": "Teamwork",
+            "rate": 5
+        },
+        {
+            "name": "Adaptability",
+            "rate": 5
+        },
+        {
+            "name": "Dedication",
+            "rate": 5
+        },
+        {
+            "name": "Problem Solving",
+            "rate": 5
+        },
+        {
+            "name": "Perceverance",
+            "rate": 5
+        },
+        {
+            "name": "Good communication",
+            "rate": 5
+        }
+    ]
+}
