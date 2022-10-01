@@ -39,6 +39,14 @@
         {
             "name": "C#",
             "rate": 5
+        },
+        {
+            "name": "Kotlin",
+            "rate": 2
+        },
+        {
+            "name": "Android",
+            "rate": 2
         }
     ],
     "soft": [
@@ -59,7 +67,7 @@
             "rate": 5
         },
         {
-            "name": "Perceverance",
+            "name": "Perseverance",
             "rate": 5
         },
         {

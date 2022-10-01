@@ -3,12 +3,11 @@ import {FC} from 'react'
 
 import wallPaper from '../../../assets/wallpaper.jpeg'
 import profilePhoto from '../../../assets/profilePhoto.jpg'
-import { fontWeight } from '@mui/system'
 
 const MainLayout: FC<{ children: any }> = ({children}) => {
 
     return (
-        <Box component={'div'} 
+        <Box component={'main'} 
              sx={{display: 'flex', 
                  flexDirection: 'column'}}  >
             <Box 
@@ -26,12 +25,13 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
                     alignSelf:'center',
                     marginTop: {xs: '-15%' , md: '-10%', lg: '-8%'} }}  />
               <Box 
-                component={'div'} 
+                component={'header'} 
                 sx={{display: 'flex', 
                      justifyContent: 'space-evenly',
                      alignItems: 'center',
+                     flexWrap: 'wrap',
                      marginTop: 5,
-                     height: 50
+                     marginBottom: 2
                      }} >
                  <Box component={'a'} 
                    sx={{"&:hover": {
