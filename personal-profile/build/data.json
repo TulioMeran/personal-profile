@@ -1,0 +1,100 @@
+{
+    "skills": [
+        {
+            "name": "JavaScript",
+            "rate": 5
+        },
+        {
+            "name": "TypeScript",
+            "rate": 3
+        },
+        {
+            "name": "ReactJs",
+            "rate": 4
+        },
+        {
+            "name": "React Native",
+            "rate": 4
+        },
+        {
+            "name": "AngularJs",
+            "rate": 2
+        },
+        {
+            "name": "Angular",
+            "rate": 3
+        },
+        {
+            "name": "VueJs",
+            "rate": 2
+        },
+        {
+            "name": "NodeJs",
+            "rate": 3
+        },
+        {
+            "name": "ExpressJs",
+            "rate": 3
+        },
+        {
+            "name": "C#",
+            "rate": 5
+        },
+        {
+            "name": "Kotlin",
+            "rate": 2
+        },
+        {
+            "name": "Android",
+            "rate": 2
+        }
+    ],
+    "softs": [
+        {
+            "name": "Teamwork",
+            "rate": 5
+        },
+        {
+            "name": "Adaptability",
+            "rate": 5
+        },
+        {
+            "name": "Dedication",
+            "rate": 5
+        },
+        {
+            "name": "Problem Solving",
+            "rate": 5
+        },
+        {
+            "name": "Perseverance",
+            "rate": 5
+        },
+        {
+            "name": "Good communication",
+            "rate": 5
+        }
+    ],
+    "briefcase": [
+        {
+            "name": "Afilate Virtual Office",
+            "description": "This is a web application where affilate can go and check theirs medicine balances, see and edit their personal information, search for medicine budget and make requests about new services.",
+            "tech": ["ReactJs","Mui 5", "Redux" ,".Net 5", "Ms SQL","JavaScript","C#"],
+            "role": "Full Stack developer",
+            "images": [
+                "imgs/briefcase/ova/1.png",
+                "imgs/briefcase/ova/2.png",
+                "imgs/briefcase/ova/3.png"
+            ],
+            "url": "https://ova.arssenasa.gob.do"
+        },
+        {
+            "name": "SeNaSa  App",
+            "description": "This is a mobile app where affilate can go and check theirs medicine balances, see and edit their personal information, search for medicine budget and make requests about new services.",
+            "tech": ["React Native", ".Net 5", "Ms SQL","JavaScript","C#"],
+            "role": "Full Stack developer",
+            "images": [],
+            "url": null
+        }
+    ]
+}
