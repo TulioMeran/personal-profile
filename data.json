@@ -82,9 +82,9 @@
             "tech": ["ReactJs","Mui 5", "Redux" ,".Net 5", "Ms SQL","JavaScript","C#"],
             "role": "Full Stack developer",
             "images": [
-                "imgs/briefcase/ova/1.png",
-                "imgs/briefcase/ova/2.png",
-                "imgs/briefcase/ova/3.png"
+                "../../imgs/briefcase/ova/1.png",
+                "../../imgs/briefcase/ova/2.png",
+                "../../imgs/briefcase/ova/3.png"
             ],
             "url": "https://ova.arssenasa.gob.do"
         },
