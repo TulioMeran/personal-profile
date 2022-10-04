@@ -1,5 +1,6 @@
 import MainLayout from "../../components/layouts/main"
-import ContactMe from "../../components/sections/contactMe"
+import BriefcaseSection from "../../components/sections/briefcase"
+import ContactMeSection from "../../components/sections/contactMe"
 import PresentationSection from "../../components/sections/presentation"
 import SkillsSection from "../../components/sections/skills"
 
@@ -8,7 +9,8 @@ const HomePage = () => {
         <MainLayout>
            <PresentationSection />
            <SkillsSection />
-           <ContactMe />
+           <BriefcaseSection />
+           <ContactMeSection />
         </MainLayout>
         )
 }

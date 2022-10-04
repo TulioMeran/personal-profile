@@ -1,13 +1,14 @@
 import { Star } from '@mui/icons-material'
-import { Box } from '@mui/material'
+import { Box, SxProps } from '@mui/material'
 import {FC} from 'react'
 
 
 const SkillBox: FC<{name: string, rate: number, isSoft?: boolean}> = ({name, rate, isSoft = false}) => {
 
-    return (
-        <Box component={'div'} 
-              sx={{backgroundColor: isSoft ? '#13A9BD' : '#2C0A3A', 
+     const sxStyles = () => {
+
+          const mainContainer: SxProps = {
+               backgroundColor: isSoft ? '#13A9BD' : '#2C0A3A', 
                    display: 'flex',
                    flexDirection: 'column',
                    justifyContent: 'center', 
@@ -16,18 +17,46 @@ const SkillBox: FC<{name: string, rate: number, isSoft?: boolean}> = ({name, rat
                    width: 200,
                    borderRadius: 10,
                    marginTop: 1
-                   }} >
-            <Box component={'label'} 
-                 sx={{color: '#fff', 
-                      fontWeight: '700',
-                      fontSize: 25,
-                      paddingInline: 2,
-                      textAlign: 'center',
-                      "&:hover": {color: '#E3E012', cursor: 'pointer'}}} >{name}</Box>
-             <Box component={'div'}
-                  sx={{color: '#fff', display: 'flex', flexDirection: 'row', marginTop: 1}} >
+          }
 
-                    {Array(rate).fill(0).map((_,index) => <Star sx={{"&:hover": {color: '#E3E012', cursor: 'pointer'}}} key={index} />)}
+          const labelNameStyle: SxProps = {
+               color: '#fff', 
+               fontWeight: '700',
+               fontSize: 25,
+               paddingInline: 2,
+               textAlign: 'center',
+               "&:hover": {color: '#E3E012', cursor: 'pointer'}
+          }
+
+          const starsContainerStyle: SxProps = {
+               color: '#fff', 
+               display: 'flex', 
+               flexDirection: 'row', 
+               marginTop: 1
+          }
+
+          const starStyle: SxProps = {
+               "&:hover": {color: '#E3E012', 
+               cursor: 'pointer'}
+          }
+
+          return { 
+               mainContainer,
+               labelNameStyle,
+               starsContainerStyle,
+               starStyle
+          }
+     }
+
+    return (
+        <Box component={'div'} 
+              sx={sxStyles().mainContainer} >
+            <Box component={'label'} 
+                 sx={sxStyles().labelNameStyle} >{name}</Box>
+             <Box component={'div'}
+                  sx={sxStyles().starsContainerStyle} >
+
+                    {Array(rate).fill(0).map((_,index) => <Star sx={sxStyles().starStyle} key={index} />)}
              </Box>
          </Box>
     )

@@ -1,33 +1,69 @@
-import { Box } from "@mui/material"
+import { Box, SxProps } from "@mui/material"
 
 const PresentationSection = () => {
+
+     const sxStyles = () => {
+
+          const presentationContainerStyle: SxProps = {
+               padding: 5,
+               fontSize: 25, 
+               fontStyle: 'italic',
+               backgroundColor:'#F7F7F7'
+          }
+
+          const presentationLabelStyle: SxProps = {
+               fontSize: 35, 
+               fontWeight: '600', 
+               marginBottom: 2
+          }
+
+          const labelsContainerStyle: SxProps = {
+               display: 'flex', 
+               flexDirection: 'row',
+               justifyContent: 'space-between', 
+               flexWrap: 'wrap'
+          }
+
+          const valueContainerStyle: SxProps = {
+               display: 'flex', 
+               flexDirection: 'row', 
+               marginBottom: 2, 
+               columnGap: 2, 
+               rowGap: 2
+          }
+
+          return {
+               presentationContainerStyle,
+               presentationLabelStyle,
+               labelsContainerStyle,
+               valueContainerStyle
+          }
+     }
 
     return (
      <Box component={'div'} 
           id="presentation-section"
-          sx={{padding: 5,
-               fontSize: 25, 
-               fontStyle: 'italic',
-               backgroundColor:'#F7F7F7'}}>
+          sx={sxStyles().presentationContainerStyle}>
         <Box component={'div'} sx={{display: 'flex', flexDirection: 'column'}} >
-          <Box component={'div'} sx={{display: 'flex', flexDirection: 'row',justifyContent: 'space-between', flexWrap: 'wrap'}} >
-          <Box component={'div'} sx={{display: 'flex', flexDirection: 'row', marginBottom: 2, columnGap: 2, rowGap: 2}} >
+          <Box component={'label'} sx={sxStyles().presentationLabelStyle} >Presentation</Box>
+          <Box component={'div'} sx={sxStyles().labelsContainerStyle} >
+          <Box component={'div'} sx={sxStyles().valueContainerStyle} >
                <label><strong>Full name:</strong></label>
                <label>Rafael Tulio Meran</label>
           </Box>
-          <Box component={'div'} sx={{display: 'flex', flexDirection: 'row', marginBottom: 2, columnGap: 2, rowGap: 2}} >
+          <Box component={'div'} sx={sxStyles().valueContainerStyle} >
                <label><strong>Major:</strong></label>
                <label>Software Engineer</label>
           </Box>
-          <Box component={'div'} sx={{display: 'flex', flexDirection: 'row', marginBottom: 2, columnGap: 2, rowGap: 2}} >
+          <Box component={'div'} sx={sxStyles().valueContainerStyle} >
                <label><strong>Hometown country:</strong></label>
                <label>Dominican Republic</label>
           </Box>
-          <Box component={'div'} sx={{display: 'flex', flexDirection: 'row', marginBottom: 2, columnGap: 2, rowGap: 2}} >
+          <Box component={'div'} sx={sxStyles().valueContainerStyle} >
                <label><strong>BirthDay:</strong></label>
                <label>July, 4th</label>
           </Box>
-          <Box component={'div'} sx={{display: 'flex', flexDirection: 'row', marginBottom: 2, columnGap: 2, rowGap: 2}} >
+          <Box component={'div'} sx={sxStyles().valueContainerStyle} >
                <label><strong>Work years experience:</strong></label>
                <label>5+</label>
           </Box>

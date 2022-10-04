@@ -49,7 +49,7 @@
             "rate": 2
         }
     ],
-    "soft": [
+    "softs": [
         {
             "name": "Teamwork",
             "rate": 5
@@ -73,6 +73,28 @@
         {
             "name": "Good communication",
             "rate": 5
+        }
+    ],
+    "briefcase": [
+        {
+            "name": "Afilate Virtual Office",
+            "description": "This is a web application where affilate can go and check theirs medicine balances, see and edit their personal information, search for medicine budget and make requests about new services.",
+            "tech": ["ReactJs","Mui 5", "Redux" ,".Net 5", "Ms SQL","JavaScript","C#"],
+            "role": "Full Stack developer",
+            "images": [
+                "imgs/briefcase/ova/1.png",
+                "imgs/briefcase/ova/2.png",
+                "imgs/briefcase/ova/3.png"
+            ],
+            "url": "https://ova.arssenasa.gob.do"
+        },
+        {
+            "name": "SeNaSa  App",
+            "description": "This is a mobile app where affilate can go and check theirs medicine balances, see and edit their personal information, search for medicine budget and make requests about new services.",
+            "tech": ["React Native", ".Net 5", "Ms SQL","JavaScript","C#"],
+            "role": "Full Stack developer",
+            "images": [],
+            "url": null
         }
     ]
 }
