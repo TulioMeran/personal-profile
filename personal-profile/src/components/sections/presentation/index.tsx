@@ -70,11 +70,15 @@ const PresentationSection = () => {
           </Box>
           <Box component={'div'}>
                <label> <strong>Summary:</strong> </label>
-               <p>Hi, i'm a <strong>software developer</strong> with many years of experience. I have worked most of the time as a <strong>frontend</strong> developer with javascript's frameworks such as <strong>Angular</strong> and <strong>Vuejs</strong>  and libraries as <strong>React.js</strong>, Redux and Jquery, also i have experience working with <strong>backend</strong> tecnologies such as ASP.NET MVC, <strong>ASP.NET CORE</strong>  and PHP (Slim framework and Symfony).</p>
-
-               <p>I also have knowledge in mobile framework such as <strong>React native</strong>, xamarin forms and flutter, and backends such as NodeJS with <strong>Express.js</strong>  and Django.</p>
-
-               <p>My main mission is always to <strong>keep learning</strong> new things about programming tecnologies and frameworks, i hope my profile could be interesting and <strong>let's code.</strong> </p>
+               <Box component={'p'} sx={{textAlign: 'center'}} >
+                 Hi, i'm a <strong>software developer</strong> with many years of experience. I have worked most of the time as a <strong>frontend</strong> developer with javascript's frameworks such as <strong>Angular</strong> and <strong>Vuejs</strong>  and libraries as <strong>React.js</strong>, Redux and Jquery, also i have experience working with <strong>backend</strong> tecnologies such as ASP.NET MVC, <strong>ASP.NET CORE</strong>  and PHP (Slim framework and Symfony).
+               </Box>
+               <Box component={'p'} sx={{textAlign: 'center'}} >
+                  I also have knowledge in mobile framework such as <strong>React native</strong>, xamarin forms and flutter, and backends such as NodeJS with <strong>Express.js.</strong> 
+               </Box>
+               <Box component={'p'} sx={{textAlign: 'center'}} >
+                 My main mission is always to <strong>keep learning</strong> new things about programming tecnologies and frameworks, i hope my profile could be interesting and <strong>let's code.</strong> 
+               </Box>
           </Box>
         </Box>
      </Box>)
