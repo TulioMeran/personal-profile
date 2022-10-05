@@ -8,13 +8,13 @@ const PresentationSection = () => {
                padding: 5,
                fontSize: 25, 
                fontStyle: 'italic',
-               backgroundColor:'#F7F7F7'
+               backgroundColor:'#F7F7F7',
           }
 
           const presentationLabelStyle: SxProps = {
                fontSize: 35, 
                fontWeight: '600', 
-               marginBottom: 2
+               marginBottom: 5
           }
 
           const labelsContainerStyle: SxProps = {

@@ -28,8 +28,10 @@ const CaseBox: FC<{ case: BriefCase }> = (props) => {
         }
 
         const imageStyle: SxProps = {
-            height: 'auto', 
-            width: '100%'
+            height: 450, 
+            width: '100%',
+            objectFit: 'contain'
+            
         }
 
         return {
@@ -74,7 +76,7 @@ const CaseBox: FC<{ case: BriefCase }> = (props) => {
           <Box component={'div'} sx={{marginTop: 2}} >
               <Carousel>
                {props.case.images.map((item,index) => 
-                (<Carousel.Item key={index}><Box component={'img'} src={item} sx={sxStyles().imageStyle} /></Carousel.Item> ))}
+                (<Carousel.Item key={index}><Box component={'img'} src={`${process.env.PUBLIC_URL}/${item}`} sx={sxStyles().imageStyle} /></Carousel.Item> ))}
               </Carousel>
 
           </Box>

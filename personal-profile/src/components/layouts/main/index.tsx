@@ -1,10 +1,24 @@
-import { Box, SxProps } from '@mui/material'
-import {FC} from 'react'
+import { Box, Fab, SxProps } from '@mui/material'
+import React, {FC, useState,useEffect} from 'react'
 
 import wallPaper from '../../../assets/wallpaper.jpeg'
 import profilePhoto from '../../../assets/profilePhoto.jpg'
+import { KeyboardArrowUp } from '@mui/icons-material'
 
 const MainLayout: FC<{ children: any }> = ({children}) => {
+
+  const [isVisible,setIsVisible] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 100){
+        setIsVisible(true)
+      } else {
+        setIsVisible(false)
+      }
+    })
+  }, [])
+
 
   const sxStyles = () => {
 
@@ -57,7 +71,11 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
   }
     return (
         <Box component={'main'} 
-             sx={sxStyles().mainStyle}  >
+             sx={sxStyles().mainStyle}
+             onScroll={(event: React.UIEvent<HTMLElement>) : void => {
+              console.log(event)
+            }}
+            >
             <Box 
               component={'div'} 
               sx={sxStyles().imgStyle} />
@@ -79,7 +97,15 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
                    sx={sxStyles().headerOpcionStyle}
                    href="#contactme-section">Contact Me</Box>
               </Box>
+              {isVisible && <Fab 
+                sx={{position: 'fixed', right: 20, bottom: 80, backgroundColor: '#13A9BD', "&:hover": {backgroundColor:'#13A9BD' }}}  
+                variant='circular'
+                onClick={() => window.scrollTo({top:0,left:0,behavior: 'smooth'})} >
+                  <KeyboardArrowUp sx={{color: '#fff', height: 30, width: 30}} />
+                  </Fab>}
+              
             {children}
+                
         </Box>
     )
 }

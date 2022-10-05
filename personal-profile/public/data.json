@@ -93,7 +93,14 @@
             "description": "This is a mobile app where affilate can go and check theirs medicine balances, see and edit their personal information, search for medicine budget and make requests about new services.",
             "tech": ["React Native", ".Net 5", "Ms SQL","JavaScript","C#"],
             "role": "Full Stack developer",
-            "images": [],
+            "images": [
+                "imgs/briefcase/ova-app/1.jpeg",
+                "imgs/briefcase/ova-app/2.jpeg",
+                "imgs/briefcase/ova-app/3.jpeg",
+                "imgs/briefcase/ova-app/4.jpeg",
+                "imgs/briefcase/ova-app/5.jpeg",
+                "imgs/briefcase/ova-app/6.jpeg"
+            ],
             "url": null
         }
     ]
