@@ -74,7 +74,7 @@ const CaseBox: FC<{ case: BriefCase }> = (props) => {
        {props.case.images.length > 0 && <Box component={'div'} sx={{marginTop: 3}} >
           <label><strong>Medias:</strong></label> 
           <Box component={'div'} sx={{marginTop: 2}} >
-              <Carousel>
+              <Carousel cols={2} loop >
                {props.case.images.map((item,index) => 
                 (<Carousel.Item key={index}><Box component={'img'} src={`${process.env.PUBLIC_URL}/${item}`} sx={sxStyles().imageStyle} /></Carousel.Item> ))}
               </Carousel>
