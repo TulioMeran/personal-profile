@@ -102,6 +102,21 @@
                 "imgs/briefcase/ova-app/6.jpeg"
             ],
             "url": "https://apps.apple.com/us/app/senasa/id1371711930"
+        },
+        {
+            "name": "Almacen urbe",
+            "description": "This is a web app where users can go and management the existing product status, add new products, distribute the products by offices and make reports about product stots.",
+            "tech": ["VueJs", "Vuetify", "Vuex","JavaScript","PHP","Php Slim","MySQL"],
+            "role": "Full Stack developer",
+            "images": [
+                "imgs/briefcase/almacen-urbe/1.png",
+                "imgs/briefcase/almacen-urbe/2.png",
+                "imgs/briefcase/almacen-urbe/3.png",
+                "imgs/briefcase/almacen-urbe/4.png",
+                "imgs/briefcase/almacen-urbe/5.png",
+                "imgs/briefcase/almacen-urbe/6.png"
+            ],
+            "url": "http://almacenurbe.urbe.gob.do/"
         }
     ]
 }
