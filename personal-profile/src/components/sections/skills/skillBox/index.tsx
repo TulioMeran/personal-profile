@@ -22,6 +22,7 @@ const SkillBox: FC<{name: string, rate: number, isSoft?: boolean}> = ({name, rat
                     cursor: 'pointer',
                     height: 205,
                     width: 205,
+                    transition: '0.4s'
                    }
                           
           }

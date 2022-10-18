@@ -59,7 +59,8 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
         fontWeight: '700',
         backgroundColor: '#888888',
         color: 'white',
-        borderRadius: 10
+        borderRadius: 10,
+        transition: '0.4s'
        },
        fontSize: 25,
        textDecoration: 'none',
