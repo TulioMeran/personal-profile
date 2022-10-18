@@ -16,7 +16,14 @@ const SkillBox: FC<{name: string, rate: number, isSoft?: boolean}> = ({name, rat
                    height: 200,
                    width: 200,
                    borderRadius: 10,
-                   marginTop: 1
+                   marginTop: 1,
+                   "&:hover":{
+                    boxShadow: '2px 3px #888888',
+                    cursor: 'pointer',
+                    height: 205,
+                    width: 205,
+                   }
+                          
           }
 
           const labelNameStyle: SxProps = {

@@ -54,11 +54,17 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
       "&:hover": {
         cursor: 'pointer',
         fontWeight: '700',
+        backgroundColor: '#888888',
+        color: 'white',
+        borderRadius: 10
        },
        fontSize: 25,
        textDecoration: 'none',
        fontStyle: 'italic',
-       color:'#000'
+       color:'#000',
+       paddingInline: 2,
+       paddingTop: 1,
+       paddingBottom: 1
     }
 
     return {
