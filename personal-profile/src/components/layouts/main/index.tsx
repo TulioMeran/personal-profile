@@ -47,7 +47,10 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
       alignItems: 'center',
       flexWrap: 'wrap',
       marginTop: 5,
-      marginBottom: 2
+      paddingTop: 1,
+      paddingBottom: 1,
+   //   marginBottom: 2,
+      backgroundColor: '#EBEBEB'
     }
 
     const headerOpcionStyle: SxProps = {
