@@ -117,6 +117,19 @@
                 "imgs/briefcase/almacen-urbe/6.png"
             ],
             "url": "http://almacenurbe.urbe.gob.do/"
+        },
+        {
+            "name": "Pokedex",
+            "description": "This is a pokedex built in ReactJS using a free REST API about pokemons.",
+            "tech": ["ReactJs", "JavaScript", "HTML","CSS"],
+            "role": "Frontend developer",
+            "images": [
+                "imgs/briefcase/pokedex/1.png",
+                "imgs/briefcase/pokedex/2.png",
+                "imgs/briefcase/pokedex/3.png",
+                "imgs/briefcase/pokedex/4.png"
+            ],
+            "url": "https://tuliomeran.github.io/pokeApiReact/"
         }
     ]
 }
