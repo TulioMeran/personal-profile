@@ -121,7 +121,7 @@
         {
             "name": "Pokedex",
             "description": "This is a pokedex built in ReactJS using a free REST API about pokemons.",
-            "tech": ["ReactJs", "JavaScript", "HTML","CSS"],
+            "tech": ["ReactJs", "TypeScript", "HTML","CSS"],
             "role": "Frontend developer",
             "images": [
                 "imgs/briefcase/pokedex/1.png",
