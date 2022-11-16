@@ -50,7 +50,10 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
       paddingTop: 1,
       paddingBottom: 1,
    //   marginBottom: 2,
-      backgroundColor: '#EBEBEB'
+      backgroundColor: '#EBEBEB',
+      position: 'sticky',
+      top: 0,
+      zIndex: 10
     }
 
     const headerOpcionStyle: SxProps = {
