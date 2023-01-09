@@ -1,135 +1,151 @@
 {
-    "skills": [
-        {
-            "name": "JavaScript",
-            "rate": 5
-        },
-        {
-            "name": "TypeScript",
-            "rate": 3
-        },
-        {
-            "name": "ReactJs",
-            "rate": 4
-        },
-        {
-            "name": "React Native",
-            "rate": 4
-        },
-        {
-            "name": "AngularJs",
-            "rate": 2
-        },
-        {
-            "name": "Angular",
-            "rate": 3
-        },
-        {
-            "name": "VueJs",
-            "rate": 2
-        },
-        {
-            "name": "NodeJs",
-            "rate": 3
-        },
-        {
-            "name": "ExpressJs",
-            "rate": 3
-        },
-        {
-            "name": "C#",
-            "rate": 5
-        },
-        {
-            "name": "Kotlin",
-            "rate": 2
-        },
-        {
-            "name": "Android",
-            "rate": 2
-        }
-    ],
-    "softs": [
-        {
-            "name": "Teamwork",
-            "rate": 5
-        },
-        {
-            "name": "Adaptability",
-            "rate": 5
-        },
-        {
-            "name": "Dedication",
-            "rate": 5
-        },
-        {
-            "name": "Problem Solving",
-            "rate": 5
-        },
-        {
-            "name": "Perseverance",
-            "rate": 5
-        },
-        {
-            "name": "Good communication",
-            "rate": 5
-        }
-    ],
-    "briefcase": [
-        {
-            "name": "Afilate Virtual Office",
-            "description": "This is a web application where affilate can go and check theirs medicine balances, see and edit their personal information, search for medicine budget and make requests about new services.",
-            "tech": ["ReactJs","Mui 5", "Redux" ,".Net 5", "Ms SQL","JavaScript","C#"],
-            "role": "Full Stack developer",
-            "images": [
-                "imgs/briefcase/ova/1.png",
-                "imgs/briefcase/ova/2.png",
-                "imgs/briefcase/ova/3.png"
-            ],
-            "url": "https://ova.arssenasa.gob.do"
-        },
-        {
-            "name": "SeNaSa  App",
-            "description": "This is a mobile app where affilate can go and check theirs medicine balances, see and edit their personal information, search for medicine budget and make requests about new services.",
-            "tech": ["React Native", ".Net 5", "Ms SQL","JavaScript","C#"],
-            "role": "Full Stack developer",
-            "images": [
-                "imgs/briefcase/ova-app/1.jpeg",
-                "imgs/briefcase/ova-app/2.jpeg",
-                "imgs/briefcase/ova-app/3.jpeg",
-                "imgs/briefcase/ova-app/4.jpeg",
-                "imgs/briefcase/ova-app/5.jpeg",
-                "imgs/briefcase/ova-app/6.jpeg"
-            ],
-            "url": "https://apps.apple.com/us/app/senasa/id1371711930"
-        },
-        {
-            "name": "Almacen urbe",
-            "description": "This is a web app where users can go and management the existing product status, add new products, distribute the products by offices and make reports about product stots.",
-            "tech": ["VueJs", "Vuetify", "Vuex","JavaScript","PHP","Php Slim","MySQL"],
-            "role": "Full Stack developer",
-            "images": [
-                "imgs/briefcase/almacen-urbe/1.png",
-                "imgs/briefcase/almacen-urbe/2.png",
-                "imgs/briefcase/almacen-urbe/3.png",
-                "imgs/briefcase/almacen-urbe/4.png",
-                "imgs/briefcase/almacen-urbe/5.png",
-                "imgs/briefcase/almacen-urbe/6.png"
-            ],
-            "url": "http://almacenurbe.urbe.gob.do/"
-        },
-        {
-            "name": "Pokedex",
-            "description": "This is a pokedex built in ReactJS using a free REST API about pokemons.",
-            "tech": ["ReactJs", "TypeScript", "HTML","CSS"],
-            "role": "Frontend developer",
-            "images": [
-                "imgs/briefcase/pokedex/1.png",
-                "imgs/briefcase/pokedex/2.png",
-                "imgs/briefcase/pokedex/3.png",
-                "imgs/briefcase/pokedex/4.png"
-            ],
-            "url": "https://tuliomeran.github.io/pokeApiReact/"
-        }
-    ]
+  "skills": [
+    {
+      "name": "JavaScript",
+      "rate": 5
+    },
+    {
+      "name": "TypeScript",
+      "rate": 4
+    },
+    {
+      "name": "ReactJs",
+      "rate": 5
+    },
+    {
+      "name": "React Native",
+      "rate": 5
+    },
+    {
+      "name": "AngularJs",
+      "rate": 2
+    },
+    {
+      "name": "Angular",
+      "rate": 3
+    },
+    {
+      "name": "VueJs",
+      "rate": 2
+    },
+    {
+      "name": "NodeJs",
+      "rate": 3
+    },
+    {
+      "name": "ExpressJs",
+      "rate": 3
+    },
+    {
+      "name": "C#",
+      "rate": 5
+    },
+    {
+      "name": "Swift",
+      "rate": 2
+    },
+    {
+      "name": "IOS",
+      "rate": 2
+    }
+  ],
+  "softs": [
+    {
+      "name": "Teamwork",
+      "rate": 5
+    },
+    {
+      "name": "Adaptability",
+      "rate": 5
+    },
+    {
+      "name": "Dedication",
+      "rate": 5
+    },
+    {
+      "name": "Problem Solving",
+      "rate": 5
+    },
+    {
+      "name": "Perseverance",
+      "rate": 5
+    },
+    {
+      "name": "Good communication",
+      "rate": 5
+    }
+  ],
+  "briefcase": [
+    {
+      "name": "Afilate Virtual Office",
+      "description": "This is a web application where affilate can go and check theirs medicine balances, see and edit their personal information, search for medicine budget and make requests about new services.",
+      "tech": [
+        "ReactJs",
+        "Mui 5",
+        "Redux",
+        ".Net 5",
+        "Ms SQL",
+        "JavaScript",
+        "C#"
+      ],
+      "role": "Full Stack developer",
+      "images": [
+        "imgs/briefcase/ova/1.png",
+        "imgs/briefcase/ova/2.png",
+        "imgs/briefcase/ova/3.png"
+      ],
+      "url": "https://ova.arssenasa.gob.do"
+    },
+    {
+      "name": "SeNaSa  App",
+      "description": "This is a mobile app where affilate can go and check theirs medicine balances, see and edit their personal information, search for medicine budget and make requests about new services.",
+      "tech": ["React Native", ".Net 5", "Ms SQL", "JavaScript", "C#"],
+      "role": "Full Stack developer",
+      "images": [
+        "imgs/briefcase/ova-app/1.jpeg",
+        "imgs/briefcase/ova-app/2.jpeg",
+        "imgs/briefcase/ova-app/3.jpeg",
+        "imgs/briefcase/ova-app/4.jpeg",
+        "imgs/briefcase/ova-app/5.jpeg",
+        "imgs/briefcase/ova-app/6.jpeg"
+      ],
+      "url": "https://apps.apple.com/us/app/senasa/id1371711930"
+    },
+    {
+      "name": "Almacen urbe",
+      "description": "This is a web app where users can go and management the existing product status, add new products, distribute the products by offices and make reports about product stots.",
+      "tech": [
+        "VueJs",
+        "Vuetify",
+        "Vuex",
+        "JavaScript",
+        "PHP",
+        "Php Slim",
+        "MySQL"
+      ],
+      "role": "Full Stack developer",
+      "images": [
+        "imgs/briefcase/almacen-urbe/1.png",
+        "imgs/briefcase/almacen-urbe/2.png",
+        "imgs/briefcase/almacen-urbe/3.png",
+        "imgs/briefcase/almacen-urbe/4.png",
+        "imgs/briefcase/almacen-urbe/5.png",
+        "imgs/briefcase/almacen-urbe/6.png"
+      ],
+      "url": "http://almacenurbe.urbe.gob.do/"
+    },
+    {
+      "name": "Pokedex",
+      "description": "This is a pokedex built in ReactJS using a free REST API about pokemons.",
+      "tech": ["ReactJs", "TypeScript", "HTML", "CSS"],
+      "role": "Frontend developer",
+      "images": [
+        "imgs/briefcase/pokedex/1.png",
+        "imgs/briefcase/pokedex/2.png",
+        "imgs/briefcase/pokedex/3.png",
+        "imgs/briefcase/pokedex/4.png"
+      ],
+      "url": "https://tuliomeran.github.io/pokeApiReact/"
+    }
+  ]
 }
