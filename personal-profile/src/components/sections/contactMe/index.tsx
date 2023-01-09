@@ -73,10 +73,6 @@ const ContactMeSection = () => {
         Contact me
       </Box>
 
-      <form action="correo.php">
-        <input type="submit" value="dale al correo" />
-      </form>
-
       <Box component={'div'} sx={sxStyles().linksContainerStyle}>
         <Box component={'div'} sx={sxStyles().contactBoxStyle}>
           <Box component={'label'} sx={sxStyles().contactBoxLabelStyle}>
