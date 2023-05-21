@@ -41,12 +41,8 @@
       "rate": 5
     },
     {
-      "name": "Swift",
-      "rate": 2
-    },
-    {
-      "name": "IOS",
-      "rate": 2
+      "name": "GO",
+      "rate": 4
     }
   ],
   "softs": [
