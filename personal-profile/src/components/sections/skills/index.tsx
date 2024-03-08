@@ -19,7 +19,6 @@ const SkillsSection = () => {
         const labelSkillStyle: SxProps = {
             fontSize: 40, 
             fontWeight: '600', 
-            fontStyle: 'italic',
             alignSelf: {md: 'flex-end', xs: 'center'}
         }
 

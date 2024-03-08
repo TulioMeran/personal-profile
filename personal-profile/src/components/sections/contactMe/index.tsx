@@ -16,7 +16,6 @@ const ContactMeSection = () => {
     const contactmeLabelStyle: SxProps = {
       fontSize: 35,
       fontWeight: '600',
-      fontStyle: 'italic',
     };
 
     const linksContainerStyle: SxProps = {

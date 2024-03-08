@@ -1,18 +1,15 @@
-import { Box, Fab, SxProps } from '@mui/material'
+import { Box, Fab, Paper, SxProps } from '@mui/material'
 import React, {FC, useState,useEffect} from 'react'
 
-import wallPaper from '../../../assets/wallpaper.jpeg'
 import profilePhoto from '../../../assets/profilePhoto.jpg'
 import { KeyboardArrowUp } from '@mui/icons-material'
 
 const MainLayout: FC<{ children: any }> = ({children}) => {
 
   const [isVisible,setIsVisible] = useState(false)
-  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      setScrollY(window.scrollY)
       if(window.scrollY > 100){
         setIsVisible(true)
       } else {
@@ -29,12 +26,6 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
       flexDirection: 'column'
     }
 
-    const imgStyle: SxProps = {
-      width: '100%', 
-      height: 250, 
-      backgroundImage: `url(${wallPaper})`,
-    }
-
     const profileImgStyle: SxProps = {
       borderRadius: 10,
       borderColor: '#2C0A3A',
@@ -43,10 +34,8 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
       width: {xs: '30%', md: '20%', lg: '15%'},
       height: 'auto',
       alignSelf:'center',
-      marginTop: {xs: '-15%' , md: '-10%', lg: '-8%'},
-      top: { xs: '11%', md: '5%', lg: 0},
-      position: 'sticky',
-      zIndex: 11,
+      maxHeight: '150px',
+      maxWidth: '150px',
       transition: '0.8s'
     }
 
@@ -55,14 +44,10 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
       justifyContent: 'space-evenly',
       alignItems: 'center',
       flexWrap: 'wrap',
-      marginTop: 5,
       paddingTop: 1,
       paddingBottom: 1,
-   //   marginBottom: 2,
       backgroundColor: '#EBEBEB',
-      position: 'sticky',
-      top: -10,
-      zIndex: 10
+      flexDirection: {xs: 'column', md: 'row'}
     }
 
     const headerOpcionStyle: SxProps = {
@@ -76,7 +61,6 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
        },
        fontSize: 25,
        textDecoration: 'none',
-       fontStyle: 'italic',
        color:'#000',
        paddingInline: 2,
        paddingTop: 1,
@@ -85,12 +69,14 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
        borderColor: '#2C0A3A',
        borderWidth: 1,
        borderStyle: 'solid',
+       width: {xs: '100%', md: 'auto'},
+       textAlign: 'center',
+       marginY: '2px'
        
     }
 
     return {
       mainStyle,
-      imgStyle,
       profileImgStyle,
       headerContainerStyle,
       headerOpcionStyle
@@ -103,23 +89,24 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
               console.log(event)
             }}
             >
-            <Box 
-              component={'div'} 
-              sx={sxStyles().imgStyle} />
-             <Box 
+              <Paper 
+                  sx={{position: 'sticky',  
+                       top: 0, display: 'flex', 
+                       flexDirection: 
+                          {xs: 'row', md: 'column'},
+                        backgroundColor: '#EBEBEB',
+                        justifyContent: 'space-around',
+                        zIndex: 10,
+                        paddingInline: 2}}
+                  elevation={5} >
+              <Box 
                component={'img'} 
                src={profilePhoto}
                sx={{...sxStyles().profileImgStyle, 
-               height: isVisible ? 110 : 'auto', 
-               width: {
-                xs: isVisible ? 110 : '30%', 
-                md: isVisible ? 110 : '20%', 
-                lg: isVisible ? 110 : '15%'
-                },
-                right: isVisible ? 20 : 0  }}  />
-              <Box 
-                component={'header'} 
-                sx={sxStyles().headerContainerStyle} >
+               right: isVisible ? 20 : 0  }}  />
+              <Box component={'header'} 
+                sx={sxStyles().headerContainerStyle}
+                 >
                  <Box component={'a'} 
                    sx={sxStyles().headerOpcionStyle} href="#presentation-section">Presentation</Box>
                    <Box component={'a'} 
@@ -131,6 +118,8 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
                    sx={sxStyles().headerOpcionStyle}
                    href="#contactme-section">Contact Me</Box>
               </Box>
+              </Paper>
+
               {isVisible && <Fab 
                 sx={{position: 'fixed', right: 20, bottom: 80, backgroundColor: '#13A9BD', "&:hover": {backgroundColor:'#13A9BD' }}}  
                 variant='circular'

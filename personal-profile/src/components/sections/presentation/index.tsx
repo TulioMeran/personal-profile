@@ -8,7 +8,6 @@ const PresentationSection = () => {
           const presentationContainerStyle: SxProps = {
                padding: 5,
                fontSize: 25, 
-               fontStyle: 'italic',
                backgroundColor:'#F7F7F7',
           }
 

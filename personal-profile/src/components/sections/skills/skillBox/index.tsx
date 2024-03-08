@@ -2,7 +2,7 @@ import { Star } from '@mui/icons-material'
 import { Box, SxProps } from '@mui/material'
 import {FC} from 'react'
 
-
+const MAX_RATE_SKILL = 5;
 const SkillBox: FC<{name: string, rate: number, isSoft?: boolean}> = ({name, rate, isSoft = false}) => {
 
      const sxStyles = () => {
@@ -64,7 +64,10 @@ const SkillBox: FC<{name: string, rate: number, isSoft?: boolean}> = ({name, rat
              <Box component={'div'}
                   sx={sxStyles().starsContainerStyle} >
 
-                    {Array(rate).fill(0).map((_,index) => <Star sx={sxStyles().starStyle} key={index} />)}
+                    {Array(MAX_RATE_SKILL).fill(0).map((_,index) => 
+                    <Star sx={{...sxStyles().starStyle,
+                               color: index+1 <= rate ? '#E3E012': 'white'}} 
+                         key={index} />)}
              </Box>
          </Box>
     )

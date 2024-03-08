@@ -19,7 +19,6 @@ const CaseBox: FC<{ case: BriefCase }> = (props) => {
 
     const chipStyle: SxProps = {
       fontSize: 20,
-      fontStyle: 'italic',
       fontWeight: '500',
       marginTop: 1,
     };

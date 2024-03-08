@@ -14,7 +14,6 @@ const BriefcaseSection = () => {
             backgroundColor: '#EBEBEB', 
             display: 'flex', 
             flexDirection: 'column', 
-            fontStyle: 'italic', 
             fontSize: 25
         }
 
