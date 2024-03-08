@@ -1,6 +1,14 @@
 {
   "skills": [
     {
+      "name": "Java",
+      "rate": 5
+    },
+    {
+      "name": "Spring boot",
+      "rate": 5
+    },
+    {
       "name": "JavaScript",
       "rate": 5
     },
