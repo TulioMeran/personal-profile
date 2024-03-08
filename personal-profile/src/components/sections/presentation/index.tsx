@@ -1,4 +1,5 @@
 import { Box, SxProps } from "@mui/material"
+import StrongLabel from "../../shared/StrongLabel"
 
 const PresentationSection = () => {
 
@@ -65,19 +66,25 @@ const PresentationSection = () => {
           </Box>
           <Box component={'div'} sx={sxStyles().valueContainerStyle} >
                <label><strong>Work years experience:</strong></label>
-               <label>5+</label>
+               <label>6+</label>
           </Box>
           </Box>
           <Box component={'div'}>
                <label> <strong>Summary:</strong> </label>
                <Box component={'p'} sx={{textAlign: 'center'}} >
-                 Hi, i'm a <strong>software developer</strong> with many years of experience. I have worked most of the time as a <strong>frontend</strong> developer with javascript's frameworks such as <strong>Angular</strong> and <strong>Vuejs</strong>  and libraries as <strong>React.js</strong>, Redux and Jquery, also i have experience working with <strong>backend</strong> tecnologies such as ASP.NET MVC, <strong>ASP.NET CORE</strong>  and PHP (Slim framework and Symfony).
+                  Hey there! I'm a seasoned <StrongLabel label="software developer" /> with a wealth of experience under my belt. I've spent most of my career focused on <StrongLabel label="frontend development" />, mastering popular <StrongLabel label="JavaScript" /> frameworks like <StrongLabel label="Angular" />, <StrongLabel label="Vue.js" />, and <StrongLabel label="React.js" />.
                </Box>
                <Box component={'p'} sx={{textAlign: 'center'}} >
-                  I also have knowledge in mobile framework such as <strong>React native</strong>, xamarin forms and flutter, and backends such as NodeJS with <strong>Express.js.</strong> 
+                  But that's not all—I'm also well-versed in <StrongLabel label="backend" /> technologies such as <StrongLabel label="ASP.NET" />, <StrongLabel label="Golang" />, <StrongLabel label="Node.js" />, and <StrongLabel label="Spring Boot" />. I've got you covered from frontend to backend.
                </Box>
                <Box component={'p'} sx={{textAlign: 'center'}} >
-                 My main mission is always to <strong>keep learning</strong> new things about programming tecnologies and frameworks, i hope my profile could be interesting and <strong>let's code.</strong> 
+                  And when it comes to <StrongLabel label="mobile development" />, I've dabbled in <StrongLabel label="React Native" />, <StrongLabel label="Xamarin Forms" />, and <StrongLabel label="Flutter" />.
+               </Box>
+               <Box component={'p'} sx={{textAlign: 'center'}} >
+                  My passion for learning is relentless. I'm always eager to explore new programming technologies and frameworks to stay ahead of the curve.
+               </Box>
+               <Box component={'p'} sx={{textAlign: 'center'}} >
+                  If you're looking for someone who's committed to keeping up with the latest in tech and delivering top-notch solutions, then <StrongLabel label="I'm your guy" />. Let's dive into coding together!
                </Box>
           </Box>
         </Box>

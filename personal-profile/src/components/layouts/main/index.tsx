@@ -8,9 +8,11 @@ import { KeyboardArrowUp } from '@mui/icons-material'
 const MainLayout: FC<{ children: any }> = ({children}) => {
 
   const [isVisible,setIsVisible] = useState(false)
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
+      setScrollY(window.scrollY)
       if(window.scrollY > 100){
         setIsVisible(true)
       } else {
@@ -35,10 +37,17 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
 
     const profileImgStyle: SxProps = {
       borderRadius: 10,
+      borderColor: '#2C0A3A',
+      borderWidth: 2,
+      borderStyle: 'solid',
       width: {xs: '30%', md: '20%', lg: '15%'},
       height: 'auto',
       alignSelf:'center',
-      marginTop: {xs: '-15%' , md: '-10%', lg: '-8%'} 
+      marginTop: {xs: '-15%' , md: '-10%', lg: '-8%'},
+      top: { xs: '11%', md: '5%', lg: 0},
+      position: 'sticky',
+      zIndex: 11,
+      transition: '0.8s'
     }
 
     const headerContainerStyle: SxProps = {
@@ -52,7 +61,7 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
    //   marginBottom: 2,
       backgroundColor: '#EBEBEB',
       position: 'sticky',
-      top: 0,
+      top: -10,
       zIndex: 10
     }
 
@@ -71,7 +80,12 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
        color:'#000',
        paddingInline: 2,
        paddingTop: 1,
-       paddingBottom: 1
+       paddingBottom: 1,
+       borderRadius: 10,
+       borderColor: '#2C0A3A',
+       borderWidth: 1,
+       borderStyle: 'solid',
+       
     }
 
     return {
@@ -95,7 +109,14 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
              <Box 
                component={'img'} 
                src={profilePhoto}
-               sx={sxStyles().profileImgStyle}  />
+               sx={{...sxStyles().profileImgStyle, 
+               height: isVisible ? 110 : 'auto', 
+               width: {
+                xs: isVisible ? 110 : '30%', 
+                md: isVisible ? 110 : '20%', 
+                lg: isVisible ? 110 : '15%'
+                },
+                right: isVisible ? 20 : 0  }}  />
               <Box 
                 component={'header'} 
                 sx={sxStyles().headerContainerStyle} >

@@ -7,7 +7,7 @@ import imgGooglePlay from '../../../assets/Google.png';
 const ContactMeSection = () => {
   const sxStyles = () => {
     const contactmeContainerStyle: SxProps = {
-      padding: 5,
+      padding: 7,
       backgroundColor: '#E1E1E1',
       display: 'flex',
       flexDirection: 'column',
@@ -75,9 +75,6 @@ const ContactMeSection = () => {
 
       <Box component={'div'} sx={sxStyles().linksContainerStyle}>
         <Box component={'div'} sx={sxStyles().contactBoxStyle}>
-          <Box component={'label'} sx={sxStyles().contactBoxLabelStyle}>
-            Linkedin:{' '}
-          </Box>
           <Box
             component={'img'}
             src={imgLinkedin}
@@ -92,9 +89,6 @@ const ContactMeSection = () => {
           </Box>
         </Box>
         <Box component={'div'} sx={sxStyles().contactBoxStyle}>
-          <Box component={'label'} sx={sxStyles().contactBoxLabelStyle}>
-            Email:{' '}
-          </Box>
           <EmailOutlined
             sx={{ ...sxStyles().contactBoxImgStyle, color: '#900C3F' }}
           />
@@ -107,22 +101,6 @@ const ContactMeSection = () => {
           </Box>
         </Box>
         <Box component={'div'} sx={sxStyles().contactBoxStyle}>
-          <Box component={'label'} sx={sxStyles().contactBoxLabelStyle}>
-            GitHub:{' '}
-          </Box>
-          <GitHub sx={{ ...sxStyles().contactBoxImgStyle, color: '#2C0A3A' }} />
-          <Box
-            component={'a'}
-            href="https://github.com/TulioMeran"
-            target={'_blank'}
-            sx={sxStyles().enlaceStyle}>
-            my page
-          </Box>
-        </Box>
-        <Box component={'div'} sx={sxStyles().contactBoxStyle}>
-          <Box component={'label'} sx={sxStyles().contactBoxLabelStyle}>
-            Google Play Store:{' '}
-          </Box>
           <Box
             component={'img'}
             src={imgGooglePlay}
@@ -133,9 +111,20 @@ const ContactMeSection = () => {
             href="https://play.google.com/store/apps/developer?id=TulioMeran"
             target={'_blank'}
             sx={sxStyles().enlaceStyle}>
-            my account
+            Google Play Store
           </Box>
         </Box>
+        <Box component={'div'} sx={sxStyles().contactBoxStyle}>
+          <GitHub sx={{ ...sxStyles().contactBoxImgStyle, color: '#2C0A3A' }} />
+          <Box
+            component={'a'}
+            href="https://github.com/TulioMeran"
+            target={'_blank'}
+            sx={sxStyles().enlaceStyle}>
+            GitHub
+          </Box>
+        </Box>
+
       </Box>
     </Box>
   );
