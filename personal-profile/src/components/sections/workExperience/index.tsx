@@ -39,7 +39,7 @@ const WorkExperienceSection = () => {
                         alignItems: 'center', 
                         marginTop: 5}} >
                    <Box component={'label'} 
-                        sx={{width: {xs: '100%', md:'20%', textAlign: 'center'}, 
+                        sx={{width: {xs: '100%', md:'20%'}, 
                             color: customColors.gray,
                             fontSize: '1.2rem'}} >
                        {`${exp.startDay} - ${exp.endDay ? exp.endDay : 'Present'}`} 
