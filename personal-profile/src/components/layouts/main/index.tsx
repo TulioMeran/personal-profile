@@ -34,9 +34,9 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
       borderWidth: 2,
       borderStyle: 'solid',
       width: {xs: 180, md: 250, lg: 150},
-      height: 'auto',
-      maxHeight: '150px',
-      transition: '0.8s'
+      height: {xs: 150, md: 180, lg: 150},
+      transition: '0.8s',
+      alignSelf: 'center'
     }
 
     const headerContainerStyle: SxProps = {

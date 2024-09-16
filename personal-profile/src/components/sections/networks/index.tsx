@@ -11,7 +11,7 @@ const NetworksSection = () => {
     };
 
     const contactmeLabelStyle: SxProps = {
-      fontSize: 35,
+      fontSize: {xs: '1.2rem' ,md: '1.5rem'}, 
       fontWeight: '600',
     };
 
@@ -29,7 +29,7 @@ const NetworksSection = () => {
       display: 'flex',
       flexDirection: 'row',
       alignItems: 'center',
-      fontSize: 25,
+      fontSize: {xs: '1.2rem', md: '1.5rem'},
       flexWrap: 'wrap',
       columnGap: 1,
       rowGap: 1,

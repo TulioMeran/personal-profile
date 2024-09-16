@@ -13,11 +13,10 @@ const BriefcaseSection = () => {
             padding: 5,
             display: 'flex', 
             flexDirection: 'column', 
-            fontSize: 25
+            fontSize: {xs: '1.2rem', md: '1.5rem'}, 
         }
 
         const briefcaseLabel: SxProps = {
-            fontSize: 35, 
             fontWeight: '600', 
             marginBottom: 2
         }

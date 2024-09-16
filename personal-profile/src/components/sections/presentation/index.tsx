@@ -12,7 +12,7 @@ const PresentationSection = () => {
           }
 
           const presentationLabelStyle: SxProps = {
-               fontSize: '1.5rem', 
+               fontSize: {xs: '1.2rem' ,md: '1.5rem'}, 
                fontWeight: 'bold', 
               
           }
@@ -46,7 +46,7 @@ const PresentationSection = () => {
           sx={sxStyles().presentationContainerStyle}>
         <Box component={'div'} sx={{display: 'flex', flexDirection: 'column'}} >
           <Box component={'label'} sx={sxStyles().presentationLabelStyle} >About</Box>
-          <Box component={'div'} sx={{color: customColors.secondary}} >
+          <Box component={'div'} sx={{color: customColors.secondary, fontSize: {xs: '1.2rem' ,md: '1.5rem'}}} >
                <Box component={'p'} >
                   Hey there! I'm a seasoned <StrongLabel label="software developer" /> with a wealth of experience under my belt. I've spent most of my career focused on <StrongLabel label="frontend development" />, mastering popular <StrongLabel label="JavaScript" /> frameworks like <StrongLabel label="Angular" />, <StrongLabel label="Vue.js" />, and <StrongLabel label="React.js" />.
                </Box>

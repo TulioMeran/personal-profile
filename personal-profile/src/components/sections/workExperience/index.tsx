@@ -13,31 +13,14 @@ const WorkExperienceSection = () => {
         }
 
         const titleLabelStyle: SxProps = {
-             fontSize: '1.5rem', 
+             fontSize: {xs: '1.2rem', md: '1.5rem'}, 
              fontWeight: 'bold', 
             
-        }
-
-        const labelsContainerStyle: SxProps = {
-             display: 'flex', 
-             flexDirection: 'row',
-             justifyContent: 'space-between', 
-             flexWrap: 'wrap'
-        }
-
-        const valueContainerStyle: SxProps = {
-             display: 'flex', 
-             flexDirection: 'row', 
-             marginBottom: 2, 
-             columnGap: 2, 
-             rowGap: 2
         }
 
         return {
             workExperienceContainerStyle,
             titleLabelStyle,
-             labelsContainerStyle,
-             valueContainerStyle
         }
    }
    
@@ -50,24 +33,24 @@ const WorkExperienceSection = () => {
             {experiencies.map(exp => (
                 <Box key={`${exp.company}-${exp.position}`} 
                     sx={{display: 'flex', 
-                        flex: 'row', 
+                        flexDirection: {xs: 'column', md: 'row'}, 
                         paddingY: 1, 
                         justifyContent: 'space-between', 
                         alignItems: 'center', 
                         marginTop: 5}} >
                    <Box component={'label'} 
-                        sx={{width: {xs: '30%', md:'20%'}, 
+                        sx={{width: {xs: '100%', md:'20%', textAlign: 'center'}, 
                             color: customColors.gray,
                             fontSize: '1.2rem'}} >
                        {`${exp.startDay} - ${exp.endDay ? exp.endDay : 'Present'}`} 
                    </Box>
-                   <Box component={'div'} sx={{width: '80%'}} >
+                   <Box component={'div'} sx={{width: {xs: '100%',md: '80%'}}} >
                       <Box component={'div'} 
-                            sx={{ fontSize: '1.8rem'}} >{`${exp.position} - ${exp.company}`}</Box>
+                            sx={{ fontSize: {xs: '1.4rem' , md: '1.8rem'}, fontWeight: 'bold'}} >{`${exp.position} - ${exp.company}`}</Box>
                       <Box component={'p'}
-                           sx={{color: customColors.secondary, fontSize: '1.5rem'}} > {exp.description}</Box>
+                           sx={{color: customColors.secondary, fontSize: {xs: '1.2rem' , md: '1.5rem'}}} > {exp.description}</Box>
                       <Box component={'label'} 
-                           sx={{color: customColors.gray}} >{exp.stack.join(" · ")}</Box>
+                           sx={{color: customColors.gray, fontSize: {xs: '1.2rem', md: '1.4rem'}}} >{exp.stack.join(" · ")}</Box>
                    </Box>
                 </Box>
             ))}
