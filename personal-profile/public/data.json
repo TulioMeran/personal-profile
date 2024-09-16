@@ -151,5 +151,47 @@
       ],
       "url": "https://tuliomeran.github.io/pokeApiReact/"
     }
+  ],
+  "experiencies": [
+    {
+      "position": "Software Engineer",
+      "company": "EPAM Systems",
+      "description": "In my role as a frontend developer specializing in ReactJS, my responsibilities encompass rectifying issues within pre-existing projects and crafting novel modules and user interface components to enhance the overall user experience and interface of these projects. Employing a suite of cutting-edge technologies, including ReactJS, HTML, CSS, Git, JavaScript, React Hooks, as well as Java and the Spring Framework, I am adept at navigating the intricacies of each to deliver optimal solutions. Through meticulous bug- fixing and innovative development, I strive to continuously elevate the quality and functionality of the projects I'm involved in.",
+      "startDay": "Jun 2022",
+      "endDay": null,
+      "stack": ["Java", "Springboot", "ReactJS", "TypeScript", "NestJS", "Cypress"]
+    },
+    {
+      "position": "Software Programmer",
+      "company": "SeNaSa",
+      "description": "Throughout my tenure, I have been extensively engaged in rectifying glitches within established web applications while simultaneously spearheading the development of mobile applications from inception. These mobile apps were strategically designed to streamline internal procedures and seamlessly integrate various software systems within the company framework. My proficiency spans a diverse range of technologies, including ReactJS, ReactNative, VueJs, JavaScript, AzureDevOps, C#, ASP.NET, and SQL Server. Leveraging this comprehensive toolkit, I have successfully orchestrated the automation of internal processes and facilitated seamless software integrations, contributing significantly to the operational efficiency and technological advancement of the organization.",
+      "startDay": "Feb 2021",
+      "endDay": "Jun 2022",
+      "stack": ["C#", ".NET",".NET Core", "ReactJS", "React Native", "VueJS", "SQL Server"]
+    },
+    {
+      "position": "Visual Programmer",
+      "company": "BHD Bank",
+      "description": "During my tenure, my primary role involved providing support for applications developed using ASP.NET and Angular frameworks. This support entailed various tasks such as troubleshooting production bugs and implementing enhancements to existing applications. Additionally, I was actively involved in refining stored procedures within the PL/SQL database environment to optimize performance and functionality.",
+      "startDay": "Nov 2020",
+      "endDay": "Apr 2021",
+      "stack": ["C#","Java", "Angular", "PL SQL", "Tomcat", "SQL Server"]
+    },
+    {
+      "position": "Analyst Programmer",
+      "company": "Hunter del Caribe",
+      "description": "Throughout my professional journey, I've been deeply involved in addressing and resolving issues within established web applications, alongside pioneering the development of applications from the ground up to streamline internal processes within the company. My expertise encompasses a spectrum of cutting-edge technologies, including JavaScript, AngularJS, Git, Xamarin Forms, ASP.NET MVC, and MSSQL. Leveraging these tools, I've successfully automated internal workflows, optimizing efficiency and bolstering operational performance within the organization.",
+      "startDay": "Sep 2019",
+      "endDay": "Sep 2020",
+      "stack": ["C#","JavaScript", "AngularJS", "ReactJS", "SQL Server"]
+    },
+    {
+      "position": "Software Developer",
+      "company": "URBE",
+      "description": "In my professional experience, I've been deeply involved in spearheading the development of projects from their inception, aiming to automate internal processes within the company. These projects encompass a wide array of functionalities, ranging from applications designed to facilitate interviews to web-based platforms tailored for consulting and updating data pertinent to internal tasks. My technological toolkit encompasses an extensive range of languages and frameworks, including JavaScript, Angular, Vue.js, React.js, PHP, C#, MySQL, MSSQL, and Java. By leveraging these diverse tools, I've successfully engineered solutions that enhance operational efficiency and streamline internal workflows, contributing to the overall productivity and effectiveness of the organization.",
+      "startDay": "Oct 2017",
+      "endDay": "Sep 2019",
+      "stack": ["C#","Java","JavaScript", "Angular", "ReactJS", "SQL Server"]
+    }
   ]
 }

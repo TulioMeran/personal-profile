@@ -1,7 +1,8 @@
-import { Box, Chip, SxProps } from '@mui/material';
+import { Box, SxProps } from '@mui/material';
 import Carousel from 'better-react-carousel';
 import { FC } from 'react';
 import { BriefCase } from '../../../../types/data/briefcase';
+import { customColors } from '../../../../constants/color';
 
 const CaseBox: FC<{ case: BriefCase }> = (props) => {
   const sxStyles = () => {
@@ -40,9 +41,6 @@ const CaseBox: FC<{ case: BriefCase }> = (props) => {
   return (
     <Box component={'div'} sx={{ marginTop: 3 }}>
       <Box component={'div'}>
-        <label>
-          <strong>Name: </strong>
-        </label>
         <Box
           component={'a'}
           href={props.case.url}
@@ -52,35 +50,15 @@ const CaseBox: FC<{ case: BriefCase }> = (props) => {
         </Box>
       </Box>
       <Box component={'div'} sx={{ marginTop: 2 }}>
-        <label>
-          {' '}
-          <strong>Description:</strong>{' '}
-        </label>
-        <p>{props.case.description}</p>
+        <Box component={'label'} sx={{fontWeight: 'bold'}} >Summary</Box>
+        <Box component={'p'} sx={{color: customColors.secondary}}  >{props.case.description}</Box>
       </Box>
       <Box component={'div'}>
-        <label>
-          <strong>Role: </strong>
-        </label>
-        <label>{props.case.role}</label>
-      </Box>
-      <Box component={'div'} sx={{ marginTop: 3 }}>
-        <label>
-          <strong>Techs:</strong>
-        </label>
-        <Box component={'div'} sx={sxStyles().techContainerStyle}>
-          {props.case.tech.map((item, index) => (
-            <Box key={index} component={'div'}>
-              <Chip label={item} sx={sxStyles().chipStyle} />
-            </Box>
-          ))}
-        </Box>
+       <Box component={'label'} sx={{fontWeight: 'bold'}} >Role</Box>
+        <Box component={'p'} sx={{color: customColors.gray}} >{props.case.role}</Box>
       </Box>
       {props.case.images.length > 0 && (
         <Box component={'div'} sx={{ marginTop: 3 }}>
-          <label>
-            <strong>Medias:</strong>
-          </label>
           <Box component={'div'} sx={{ marginTop: 2 }}>
             <Carousel cols={2} loop>
               {props.case.images.map((item, index) => (

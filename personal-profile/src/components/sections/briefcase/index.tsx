@@ -11,7 +11,6 @@ const BriefcaseSection = () => {
 
         const briefcaseContainer: SxProps = {
             padding: 5,
-            backgroundColor: '#EBEBEB', 
             display: 'flex', 
             flexDirection: 'column', 
             fontSize: 25

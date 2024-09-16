@@ -1,14 +1,11 @@
-import { EmailOutlined, GitHub } from '@mui/icons-material';
 import { Box, SxProps } from '@mui/material';
 
-import imgLinkedin from '../../../assets/linkedin.svg';
-import imgGooglePlay from '../../../assets/Google.png';
+import { customColors } from '../../../constants/color';
 
-const ContactMeSection = () => {
+const NetworksSection = () => {
   const sxStyles = () => {
     const contactmeContainerStyle: SxProps = {
       padding: 7,
-      backgroundColor: '#E1E1E1',
       display: 'flex',
       flexDirection: 'column',
     };
@@ -20,7 +17,7 @@ const ContactMeSection = () => {
 
     const linksContainerStyle: SxProps = {
       display: 'flex',
-      flexDirection: 'row',
+      flexDirection: 'column',
       justifyContent: 'space-between',
       flexWrap: 'wrap',
       marginTop: 2,
@@ -66,19 +63,16 @@ const ContactMeSection = () => {
   return (
     <Box
       component={'footer'}
-      id="contactme-section"
+      id="networks-section"
       sx={sxStyles().contactmeContainerStyle}>
       <Box component={'label'} sx={sxStyles().contactmeLabelStyle}>
-        Contact me
+        Networks
       </Box>
 
       <Box component={'div'} sx={sxStyles().linksContainerStyle}>
         <Box component={'div'} sx={sxStyles().contactBoxStyle}>
-          <Box
-            component={'img'}
-            src={imgLinkedin}
-            sx={sxStyles().contactBoxImgStyle}
-          />
+        <Box component={'label'} 
+                sx={{color: customColors.gray}}  >LinkedIn</Box>
           <Box
             component={'a'}
             href="https://www.linkedin.com/in/rafael-tulio-meran-6992071aa/"
@@ -88,9 +82,8 @@ const ContactMeSection = () => {
           </Box>
         </Box>
         <Box component={'div'} sx={sxStyles().contactBoxStyle}>
-          <EmailOutlined
-            sx={{ ...sxStyles().contactBoxImgStyle, color: '#900C3F' }}
-          />
+           <Box component={'label'} 
+                sx={{color: customColors.gray}}  >Email</Box>
           <Box
             component={'a'}
             href="mailto:rtulio007@gmail.com"
@@ -100,27 +93,14 @@ const ContactMeSection = () => {
           </Box>
         </Box>
         <Box component={'div'} sx={sxStyles().contactBoxStyle}>
-          <Box
-            component={'img'}
-            src={imgGooglePlay}
-            sx={sxStyles().contactBoxImgStyle}
-          />
-          <Box
-            component={'a'}
-            href="https://play.google.com/store/apps/developer?id=TulioMeran"
-            target={'_blank'}
-            sx={sxStyles().enlaceStyle}>
-            Google Play Store
-          </Box>
-        </Box>
-        <Box component={'div'} sx={sxStyles().contactBoxStyle}>
-          <GitHub sx={{ ...sxStyles().contactBoxImgStyle, color: '#2C0A3A' }} />
+          <Box component={'label'} 
+                sx={{color: customColors.gray}}  >GitHub</Box>
           <Box
             component={'a'}
             href="https://github.com/TulioMeran"
             target={'_blank'}
             sx={sxStyles().enlaceStyle}>
-            GitHub
+            TulioMeran
           </Box>
         </Box>
 
@@ -129,4 +109,4 @@ const ContactMeSection = () => {
   );
 };
 
-export default ContactMeSection;
+export default NetworksSection;

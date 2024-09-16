@@ -13,7 +13,6 @@ const SkillsSection = () => {
             padding: 5, 
             display: 'flex', 
             flexDirection: 'column', 
-            backgroundColor: '#F1F1F1'
         }
 
         const labelSkillStyle: SxProps = {
