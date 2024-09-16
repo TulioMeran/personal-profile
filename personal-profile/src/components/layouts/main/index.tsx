@@ -29,12 +29,12 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
     }
 
     const profileImgStyle: SxProps = {
-      borderRadius: 50,
+      borderRadius: 360,
       borderColor: '#2C0A3A',
       borderWidth: 2,
       borderStyle: 'solid',
-      width: {xs: 180, md: 250, lg: 150},
-      height: {xs: 150, md: 180, lg: 150},
+      width: 140,
+      height: 140,
       transition: '0.8s',
       alignSelf: 'center'
     }
@@ -47,7 +47,7 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
       paddingBottom: 1,
       flexDirection: {xs: 'column', md: 'row'},
       columnGap: {xs: 0, md: 1},
-      rowGap: {xs: 1, md: 0}
+      rowGap: {xs: 1, md: 0},
     }
 
     const headerOpcionStyle: SxProps = {
@@ -92,7 +92,7 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
             >
               <Box component={'div'} 
                 sx={{display: 'flex', flexDirection: {xs: 'column', md: 'row'}, paddingY: 5, justifyContent: 'space-between'}} >
-                <Box component={'div'} sx={{width: {xs: '100%' ,md: '50%'}, display: 'flex'}} >
+                <Box component={'div'} sx={{ display: 'flex'}} >
                 <Box 
                   component={'img'} 
                   src={profilePhoto}

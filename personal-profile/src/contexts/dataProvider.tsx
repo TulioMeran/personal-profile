@@ -25,7 +25,6 @@ const DataProvider: FC<{children : any}> = ({children}) => {
             setSkills(data.skills)
             setSofts(data.softs)
             setBriefcase(data.briefcase)
-            debugger
             setExperiencies(data.experiencies)
         })
         .catch(err => console.log(err))
