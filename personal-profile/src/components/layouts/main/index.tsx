@@ -33,8 +33,8 @@ const MainLayout: FC<{ children: any }> = ({children}) => {
       borderColor: '#2C0A3A',
       borderWidth: 2,
       borderStyle: 'solid',
-      width: 140,
-      height: 140,
+      width: {xs: 140, md: 190, lg: 140},
+      height: {xs: 100, md: 130, lg: 140},
       transition: '0.8s',
       alignSelf: 'center'
     }
