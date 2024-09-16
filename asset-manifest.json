@@ -1,18 +1,16 @@
 {
   "files": {
-    "main.css": "/personal-profile/static/css/main.fd57a038.css",
-    "main.js": "/personal-profile/static/js/main.f8b21b6c.js",
+    "main.css": "/personal-profile/static/css/main.1932a19d.css",
+    "main.js": "/personal-profile/static/js/main.10992d32.js",
     "static/js/453.8440f5a3.chunk.js": "/personal-profile/static/js/453.8440f5a3.chunk.js",
-    "static/media/Google.png": "/personal-profile/static/media/Google.c25f475355f0001c6a03.png",
     "static/media/profilePhoto.jpg": "/personal-profile/static/media/profilePhoto.1411dac8561efbe4269c.jpg",
     "index.html": "/personal-profile/index.html",
-    "static/media/linkedin.svg": "/personal-profile/static/media/linkedin.8f5d6e7c45135cdf3e9304e8699ed59f.svg",
-    "main.fd57a038.css.map": "/personal-profile/static/css/main.fd57a038.css.map",
-    "main.f8b21b6c.js.map": "/personal-profile/static/js/main.f8b21b6c.js.map",
+    "main.1932a19d.css.map": "/personal-profile/static/css/main.1932a19d.css.map",
+    "main.10992d32.js.map": "/personal-profile/static/js/main.10992d32.js.map",
     "453.8440f5a3.chunk.js.map": "/personal-profile/static/js/453.8440f5a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd57a038.css",
-    "static/js/main.f8b21b6c.js"
+    "static/css/main.1932a19d.css",
+    "static/js/main.10992d32.js"
   ]
 }
