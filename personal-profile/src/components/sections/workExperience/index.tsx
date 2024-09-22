@@ -4,7 +4,7 @@ import { DataProviderContext } from "../../../contexts/dataProvider"
 import { customColors } from "../../../constants/color"
 
 const WorkExperienceSection = () => {
-    const {experiencies} = useContext(DataProviderContext)
+    const {experiencies, theme} = useContext(DataProviderContext)
     const sxStyles = () => {
 
         const workExperienceContainerStyle: SxProps = {
@@ -15,6 +15,7 @@ const WorkExperienceSection = () => {
         const titleLabelStyle: SxProps = {
              fontSize: {xs: '1.2rem', md: '1.5rem'}, 
              fontWeight: 'bold', 
+             color: theme.primaryFontColor
             
         }
 
@@ -46,7 +47,7 @@ const WorkExperienceSection = () => {
                    </Box>
                    <Box component={'div'} sx={{width: {xs: '100%',md: '80%'}}} >
                       <Box component={'div'} 
-                            sx={{ fontSize: {xs: '1.4rem' , md: '1.8rem'}, fontWeight: 'bold'}} >{`${exp.position} - ${exp.company}`}</Box>
+                            sx={{ fontSize: {xs: '1.4rem' , md: '1.8rem'}, fontWeight: 'bold', color: theme.primaryFontColor}} >{`${exp.position} - ${exp.company}`}</Box>
                       <Box component={'p'}
                            sx={{color: customColors.secondary, fontSize: {xs: '1.2rem' , md: '1.5rem'}}} > {exp.description}</Box>
                       <Box component={'label'} 

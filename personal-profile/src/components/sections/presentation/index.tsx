@@ -1,8 +1,12 @@
 import { Box, SxProps } from "@mui/material"
 import StrongLabel from "../../shared/StrongLabel"
 import { customColors } from "../../../constants/color"
+import { useContext } from "react"
+import { DataProviderContext } from "../../../contexts/dataProvider"
 
 const PresentationSection = () => {
+
+     const {theme} = useContext(DataProviderContext)
 
      const sxStyles = () => {
 
@@ -14,6 +18,7 @@ const PresentationSection = () => {
           const presentationLabelStyle: SxProps = {
                fontSize: {xs: '1.2rem' ,md: '1.5rem'}, 
                fontWeight: 'bold', 
+               color: theme.primaryFontColor
               
           }
 

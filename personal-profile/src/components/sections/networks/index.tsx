@@ -1,8 +1,11 @@
 import { Box, SxProps } from '@mui/material';
 
 import { customColors } from '../../../constants/color';
+import { useContext } from 'react';
+import { DataProviderContext } from '../../../contexts/dataProvider';
 
 const NetworksSection = () => {
+  const {theme} = useContext(DataProviderContext)
   const sxStyles = () => {
     const contactmeContainerStyle: SxProps = {
       padding: 7,
@@ -13,6 +16,7 @@ const NetworksSection = () => {
     const contactmeLabelStyle: SxProps = {
       fontSize: {xs: '1.2rem' ,md: '1.5rem'}, 
       fontWeight: '600',
+      color: theme.primaryFontColor
     };
 
     const linksContainerStyle: SxProps = {

@@ -5,7 +5,7 @@ import { DataProviderContext } from '../../../contexts/dataProvider'
 
 const BriefcaseSection = () => {
     
-    const {briefcase} = useContext(DataProviderContext)
+    const {briefcase, theme} = useContext(DataProviderContext)
 
     const sxStyles = () => {
 
@@ -18,7 +18,8 @@ const BriefcaseSection = () => {
 
         const briefcaseLabel: SxProps = {
             fontWeight: '600', 
-            marginBottom: 2
+            marginBottom: 2,
+            color: theme.primaryFontColor
         }
 
 

@@ -1,10 +1,12 @@
 import { Box, SxProps } from '@mui/material';
 import Carousel from 'better-react-carousel';
-import { FC } from 'react';
+import { FC, useContext } from 'react';
 import { BriefCase } from '../../../../types/data/briefcase';
 import { customColors } from '../../../../constants/color';
+import { DataProviderContext } from '../../../../contexts/dataProvider';
 
 const CaseBox: FC<{ case: BriefCase }> = (props) => {
+  const {theme} = useContext(DataProviderContext)
   const sxStyles = () => {
     const nameStyle: SxProps = {
       textDecoration: 'none',
@@ -30,11 +32,17 @@ const CaseBox: FC<{ case: BriefCase }> = (props) => {
       objectFit: 'contain',
     };
 
+    const titleStyle: SxProps = {
+      fontWeight: 'bold', 
+      color: theme.primaryFontColor
+    };
+
     return {
       nameStyle,
       techContainerStyle,
       chipStyle,
       imageStyle,
+      titleStyle
     };
   };
 
@@ -50,11 +58,11 @@ const CaseBox: FC<{ case: BriefCase }> = (props) => {
         </Box>
       </Box>
       <Box component={'div'} sx={{ marginTop: 2 }}>
-        <Box component={'label'} sx={{fontWeight: 'bold'}} >Summary</Box>
+        <Box component={'label'} sx={sxStyles().titleStyle} >Summary</Box>
         <Box component={'p'} sx={{color: customColors.secondary}}  >{props.case.description}</Box>
       </Box>
       <Box component={'div'}>
-       <Box component={'label'} sx={{fontWeight: 'bold'}} >Role</Box>
+       <Box component={'label'} sx={sxStyles().titleStyle} >Role</Box>
         <Box component={'p'} sx={{color: customColors.gray}} >{props.case.role}</Box>
       </Box>
       {props.case.images.length > 0 && (
